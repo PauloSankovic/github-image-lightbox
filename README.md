@@ -1,7 +1,8 @@
 # GitHub Image Lightbox
 
-A Firefox extension that opens GitHub image attachments in a fullscreen overlay
-on top of the page, instead of navigating away to the raw image.
+A browser extension for Firefox and Chrome that opens GitHub image attachments
+in a fullscreen overlay on top of the page, instead of navigating away to the
+raw image.
 
 Clicking a screenshot in an issue, pull request, discussion or comment normally
 replaces the GitHub page with the bare image. With this extension the image
@@ -31,7 +32,7 @@ different comments can be compared without leaving the thread.
 
 ## Install
 
-### From a release (recommended)
+### Firefox, from a release (recommended)
 
 1. Download the latest `.xpi` from the
    [Releases](https://github.com/PauloSankovic/github-image-lightbox/releases/latest) page.
@@ -42,7 +43,7 @@ different comments can be compared without leaving the thread.
 The file is signed by Mozilla through the self-distribution channel, so it
 installs in regular Firefox and survives restarts.
 
-### Temporary, from source
+### Firefox, temporary from source
 
 Useful for trying it out or for development. The extension is removed when
 Firefox restarts.
@@ -52,6 +53,19 @@ Firefox restarts.
 3. Click "Load Temporary Add-on..." and select the `manifest.json` file.
 
 Requires Firefox 140 or newer.
+
+### Chrome, from source
+
+Chrome only installs packaged extensions through the Chrome Web Store, so
+install it unpacked from a clone. Unlike Firefox, this persists across
+restarts.
+
+1. Clone this repository.
+2. Open `chrome://extensions`, enable "Developer mode" (top right).
+3. Click "Load unpacked" and select the repository folder.
+
+Chrome may show a warning about the unrecognized `browser_specific_settings`
+manifest key. It is Firefox-only metadata and can be ignored.
 
 ## Development
 
