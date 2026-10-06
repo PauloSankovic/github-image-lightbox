@@ -7,6 +7,13 @@ Clicking a screenshot in an issue, pull request, discussion or comment normally
 replaces the GitHub page with the bare image. With this extension the image
 opens in a lightbox and GitHub stays right where you left it.
 
+![Image attachment opened in the lightbox over a GitHub issue](screenshots/lightbox.jpg)
+
+Arrow keys move between all attachments on the page, so screenshots from
+different comments can be compared without leaving the thread.
+
+![Carousel showing the first of eight attachments](screenshots/carousel.jpg)
+
 ## Features
 
 - Click an attachment to open it fullscreen. Click the image to toggle between
