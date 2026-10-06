@@ -64,6 +64,21 @@ npx web-ext build
 `web-ext run` launches a separate Firefox profile with the extension loaded and
 reloads it whenever a file changes.
 
+## Releasing
+
+Releases are built by GitHub Actions. Bump `version` in `manifest.json`, commit,
+then push a matching tag:
+
+```sh
+git tag v1.3.0
+git push origin main v1.3.0
+```
+
+The workflow lints the extension, signs it through Mozilla's self-distribution
+channel and attaches the signed `.xpi` to a new GitHub release. It needs the
+`AMO_JWT_ISSUER` and `AMO_JWT_SECRET` repository secrets, created from
+https://addons.mozilla.org/developers/addon/api/key/.
+
 ## License
 
 [MIT](LICENSE)
