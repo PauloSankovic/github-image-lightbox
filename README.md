@@ -34,10 +34,13 @@ different comments can be compared without leaving the thread.
 ### From a release (recommended)
 
 1. Download the latest `.xpi` from the
-   [Releases](https://github.com/PauloSankovic/github-image-lightbox/releases) page.
+   [Releases](https://github.com/PauloSankovic/github-image-lightbox/releases/latest) page.
 2. Open the downloaded file in Firefox (drag it into a Firefox window or open it
    via `File > Open File`).
 3. Confirm the "Add" prompt.
+
+The file is signed by Mozilla through the self-distribution channel, so it
+installs in regular Firefox and survives restarts.
 
 ### Temporary, from source
 
