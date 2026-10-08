@@ -27,7 +27,7 @@ different comments can be compared without leaving the thread.
 - "Open original" opens the raw image in a new tab, like GitHub does by default.
 - Cmd/Ctrl/Shift/middle clicks are left untouched, so the browser's own
   open-in-new-tab behaviour still works.
-- No permissions, no network requests, no tracking. It is a single content
+- Only needs access to `github.com`. No network requests, no tracking. It is a single content
   script that runs on `github.com`.
 
 ## Install
